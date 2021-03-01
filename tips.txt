@@ -1,1 +1,7 @@
 https://dev.azure.com/MSC-Devops/Apex/_git/Predator
+
+git config core.sparsecheckout true
+
+.git/info/sparse-checkout
+
+/tools/ 
