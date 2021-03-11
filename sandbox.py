@@ -161,8 +161,6 @@ def compute_minimal_sandbox_data(data):
     command = 'git rev-parse --abbrev-ref HEAD'
     branch = subprocess.run(command, check=True, stdout=subprocess.PIPE).stdout.decode("utf-8").strip()
     data.local['output_tree'] = data.local['input_tree'] + '_{}_output'.format(branch)
-    print('output_tree:', data.local['output_tree'])
-    exit(0)
     if not os.path.isdir(data.local['output_tree']):
         os.makedirs(data.local['output_tree'])
     data.local['sandbox_output_dir'] = data.local['output_tree'] + '/sandbox'

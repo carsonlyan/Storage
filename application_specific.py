@@ -62,7 +62,7 @@ def get_shared_machine_file_path(data):
     return data.local['sandbox_input_dir'] + '/machines/' + socket.gethostname() + '.json'
 
 def app_specific_folders(data):
-    data.local['variants_dir_name'] = 'scons'
+    data.local['variants_dir_name'] = 'variants'
 
     data.local['release_name']     = 'release'
     data.local['debug_name']       = 'debug'
