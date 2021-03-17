@@ -5,3 +5,6 @@ git config core.sparsecheckout true
 .git/info/sparse-checkout
 
 /tools/ 
+
+
+for /F %%i in ('git rev-parse --abbrev-ref HEAD') do (set branch=%%i)
