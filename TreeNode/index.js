@@ -1,0 +1,1 @@
+export { TreeNodeComp } from './TreeNode';
